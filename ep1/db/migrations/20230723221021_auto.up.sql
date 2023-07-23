@@ -1,0 +1,1 @@
+CREATE TABLE "public"."posts" ("id" bigserial NOT NULL, "title" character varying NULL, "content" character varying NULL, "is_published" boolean NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, PRIMARY KEY ("id"));
