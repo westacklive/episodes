@@ -1,0 +1,3 @@
+CREATE TABLE "public"."cards" ("id" bigserial NOT NULL, "name" character varying NOT NULL, "cost" integer NOT NULL, "power" integer NOT NULL, "ability" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, PRIMARY KEY ("id"));
+CREATE TABLE "public"."deck_cards" ("id" bigserial NOT NULL, "deck_id" bigint NULL, "card_id" bigint NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, PRIMARY KEY ("id"));
+CREATE TABLE "public"."decks" ("id" bigserial NOT NULL, "name" character varying NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, PRIMARY KEY ("id"));
